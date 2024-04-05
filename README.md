@@ -1,4 +1,4 @@
-This is a fork of Farhan's sBitx reference implementation software. 
+This is a fork of Farhan's sBitx reference implementation software with minimal changes, just enough to make it compile and run fine on recent Linux and Raspberry Pi versions.
 
 Use this fork with a recent WiringPi version for Raspberry Pi 5 support: https://github.com/WiringPi/WiringPi/releases
 
