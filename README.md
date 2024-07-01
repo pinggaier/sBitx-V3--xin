@@ -21,14 +21,11 @@ There are two methods that you can use to perform a backup. I wrote a handy, bac
 
 You can make a copy of your original sbitx folder in entirety by using this set of commands from terminal
 ```console
-cd $HOME
-mv sbitx sbitx_orig
+cd $HOME && mv sbitx sbitx_orig
 ```
 You can restore the sbitx/data and sbitx/web folders from your backup to the newly installed sbitx folder using these commands from terminal
 ```console
-cd $HOME
-cp -r sbitx_orig/web/* sbitx/web/
-cp -r sbitx_orig/data/* sbitx/data/
+cd $HOME && cp -r sbitx_orig/web/* sbitx/web/ && cp -r sbitx_orig/data/* sbitx/data/
 ```
 
 sBitx App First Installation
@@ -37,10 +34,7 @@ sBitx App First Installation
 Open terminal and type (or copy and paste this):
 
 ```console
-cd $HOME
-git clone https://github.com/drexjj/sbitx.git
-cd sbitx
-./update
+cd $HOME && git clone https://github.com/drexjj/sbitx.git && cd sbitx && ./update
 ```
 
 sBitx App Upgrade
@@ -49,9 +43,7 @@ sBitx App Upgrade
 Open terminal and type (or copy and paste this):
 
 ```console
-cd $HOME
-cd sbitx
-./update
+cd $HOME && cd sbitx && ./update
 ```
 
 
