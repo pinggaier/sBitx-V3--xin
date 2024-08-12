@@ -618,7 +618,7 @@ struct field main_controls[] = {
   { "mouse_pointer", NULL, 1000, -1000, 50, 50, "MP", 40, "LEFT", FIELD_SELECTION, FONT_FIELD_VALUE,
     "BLANK/LEFT/RIGHT/CROSSHAIR", 0,0,0,0},
   { "#selband", NULL, 1000, -1000, 50, 50, "SELBAND", 40, "", FIELD_NUMBER, FONT_FIELD_VALUE,
-    "", 0,73,1, 0},
+    "", 0,83,1, 0},
 
 	// Settings Panel
 	{"#mycallsign", NULL, 1000, -1000, 400, 149, "MYCALLSIGN", 70, "CALL", FIELD_TEXT, FONT_SMALL, 
@@ -4250,6 +4250,7 @@ void change_band(char *request){
 
 	struct field *bandswitch = get_field_by_label(band_stack[new_band].name);
 	sprintf(bandswitch->value, "%d", band_stack[new_band].index+1);
+	sprintf(buff, "%d", new_band*10+stack);
 	set_field("#selband", buff);
 	q_empty(&q_web);// inserted by llh 
   console_init(); // inserted by llh 
