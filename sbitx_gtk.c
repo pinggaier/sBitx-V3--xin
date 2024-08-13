@@ -4046,10 +4046,10 @@ gboolean ui_tick(gpointer gook){
 		update_titlebar();
 
 		if (digitalRead(ENC1_SW) == 0){
-			//flip between mode and volume
-			if (f_focus && !strcmp(f_focus->label, "AUDIO"))
-				focus_field(get_field("r1:mode"));
-			else
+			////flip between mode and volume // llh: better to just focus volume
+			//if (f_focus && !strcmp(f_focus->label, "AUDIO"))
+			//	focus_field(get_field("r1:mode"));
+			//else
 				focus_field(get_field("r1:volume"));
 			printf("Focus is on %s\n", f_focus->label);
 		}
