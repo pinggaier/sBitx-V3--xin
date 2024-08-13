@@ -39,7 +39,7 @@ extern int display_freq;
 #define FF_MYCALL 16
 #define FF_CALLER 17
 #define FF_GRID 18
-
+#define FONT_FIELD_SELECTED 19
 
 void enter_qso();
 void call_wipe();
